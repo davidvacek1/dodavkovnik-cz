@@ -13,7 +13,7 @@ interface PragueDividerProps {
  */
 export default function PragueDivider({
   fill = "var(--surface)",
-  height = 140,
+  height = 100,
   className = "",
 }: PragueDividerProps) {
   return (
@@ -23,7 +23,7 @@ export default function PragueDivider({
       aria-hidden
     >
       <svg
-        viewBox="0 0 1920 200"
+        viewBox="0 30 1920 170"
         preserveAspectRatio="none"
         className="absolute inset-0 w-full h-full block"
       >
@@ -40,7 +40,7 @@ export default function PragueDivider({
           </linearGradient>
         </defs>
 
-        <rect x="0" y="40" width="1920" height="70" fill="url(#prg-glow)" />
+        <rect x="0" y="60" width="1920" height="70" fill="url(#prg-glow)" />
 
         {/* Prague silhouette — hand-crafted path covering the bottom. */}
         <path
