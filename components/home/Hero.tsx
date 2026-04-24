@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
+import PragueDivider from "./PragueDivider";
 import { company } from "@/lib/data/company";
 import { categoryMeta, vehicles, type Category } from "@/lib/data/vehicles";
 import {
@@ -57,7 +58,7 @@ export default function Hero() {
   }
 
   return (
-    <section className="relative isolate overflow-hidden bg-[var(--brand-navy)] text-white">
+    <section className="relative isolate overflow-hidden bg-[var(--brand-navy)] text-white pb-16 md:pb-24">
       {/* Hero background */}
       <div className="absolute inset-0 -z-10">
         <Image
@@ -222,6 +223,7 @@ export default function Hero() {
           </form>
         </div>
       </div>
+      <PragueDivider fill="var(--surface)" height={140} className="absolute inset-x-0 bottom-0" />
     </section>
   );
 }

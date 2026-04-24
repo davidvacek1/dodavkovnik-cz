@@ -51,12 +51,12 @@ export default function WhyUs() {
           <FadeIn>
             <span className="eyebrow">Proč zrovna my</span>
             <h2 className="text-[clamp(1.9rem,3.8vw,2.7rem)] font-bold">
-              Pronajímání dodávek umíme dělat lidsky.
+              Rychlé předání. Férové podmínky. Všechno v ceně.
             </h2>
             <p className="mt-5 text-[var(--ink-muted)] text-lg leading-relaxed">
-              Jsme pražská firma — znáte nás, znáte adresu, zvednete nám telefon.
-              Nejdeme na kvantitu, jdeme na to, aby si vás 80 % zákazníků pamatovalo
-              jako dobrou zkušenost.
+              Jsme pražská firma a auta nás baví. Zavoláte nám, my zvedneme telefon
+              — a během pár minut víte, kdy si můžete vůz vyzvednout. Bez stresu z dohadovaček,
+              bez pohádek o „drobných" příplatcích, bez týdenního čekání na vrácení kauce.
             </p>
           </FadeIn>
 

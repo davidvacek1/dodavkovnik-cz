@@ -29,13 +29,14 @@ export default function UseCases() {
     <section className="section bg-[var(--surface-alt)]">
       <div className="container-site">
         <FadeIn className="text-center max-w-2xl mx-auto">
-          <span className="eyebrow">Kdy se hodíme</span>
+          <span className="eyebrow">Pro koho jsme tady</span>
           <h2 className="text-[clamp(1.8rem,3.5vw,2.5rem)] font-bold">
-            Když potřebujete dodávku, jsme tady správně.
+            Potřebujete dodávku hned. My ji máme.
           </h2>
           <p className="mt-4 text-[var(--ink-muted)] text-lg">
-            Máme vůz na každou situaci — od malého stěhování po materiál na stavbu. Řekněte,
-            co potřebujete převézt, a my vám doporučíme nejvhodnější dodávku.
+            Stěhujete se, došel vám firemní vůz do servisu, nebo potřebujete odvézt materiál
+            na stavbu? Řekněte, co převážíte, a my za vás vybereme vhodný vůz — a rovnou
+            řekneme, kolik to stojí.
           </p>
         </FadeIn>
 

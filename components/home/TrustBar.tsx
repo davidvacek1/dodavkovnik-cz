@@ -43,7 +43,7 @@ const items = [
 
 export default function TrustBar() {
   return (
-    <section aria-labelledby="trust-bar" className="relative z-10 -mt-10 md:-mt-16">
+    <section aria-labelledby="trust-bar" className="relative z-10 pt-2 md:pt-4">
       <div className="container-site">
         <div className="bg-white rounded-2xl border border-[var(--border)] shadow-[0_24px_60px_-30px_rgba(15,41,68,0.35)]">
           <h2 id="trust-bar" className="sr-only">
