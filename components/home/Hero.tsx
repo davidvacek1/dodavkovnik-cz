@@ -67,11 +67,10 @@ export default function Hero() {
           priority
           sizes="100vw"
           quality={85}
-          className="object-cover object-center opacity-[0.45]"
-          onError={() => {}}
+          className="object-cover object-[center_60%] opacity-[0.65]"
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-[var(--brand-navy)] via-[var(--brand-navy)]/94 to-[var(--brand-navy)]/55" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[var(--brand-navy)] via-[var(--brand-navy)]/65 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[var(--brand-navy)] via-[var(--brand-navy)]/75 to-[var(--brand-navy)]/10" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[var(--brand-navy)]/95 via-[var(--brand-navy)]/30 to-transparent" />
         {/* Subtle radial orange glow */}
         <div
           aria-hidden
