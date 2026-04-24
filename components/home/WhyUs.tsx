@@ -27,8 +27,8 @@ export default function WhyUs() {
         <FadeIn className="relative">
           <div className="aspect-[5/6] rounded-3xl overflow-hidden relative border border-[var(--border)] bg-[var(--surface-alt)]">
             <Image
-              src="/fotky/vozy/master-l2h2.jpg"
-              alt="Střední dodávka Renault Master L2H2"
+              src="/fotky/sekce/business.jpg"
+              alt="Pražská půjčovna dodávek — firemní rozvoz"
               fill
               sizes="(min-width: 1024px) 45vw, 100vw"
               className="object-cover object-center"

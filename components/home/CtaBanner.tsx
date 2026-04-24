@@ -11,7 +11,7 @@ export default function CtaBanner() {
         <FadeIn className="relative overflow-hidden rounded-3xl bg-[var(--brand-navy)] text-white p-8 md:p-14">
           <div className="absolute inset-0 -z-0 opacity-25">
             <Image
-              src="/fotky/vozy/master-l2h2.jpg"
+              src="/fotky/cta-background.jpg"
               alt=""
               fill
               sizes="100vw"
