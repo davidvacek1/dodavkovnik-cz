@@ -37,7 +37,7 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              <Link href="/#vozy" className="hover:text-white">
+              <Link href="/vozy" className="hover:text-white">
                 Vozový park
               </Link>
             </li>

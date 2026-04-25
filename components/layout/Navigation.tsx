@@ -6,7 +6,7 @@ import { IconClose, IconMenu, IconPhone } from "../ui/Icons";
 import Logo from "./Logo";
 
 const navItems = [
-  { href: "/#vozy", label: "Vozy" },
+  { href: "/vozy", label: "Vozy" },
   { href: "/cenik", label: "Ceník" },
   { href: "/#jak-to-funguje", label: "Jak to funguje" },
   { href: "/#faq", label: "FAQ" },
