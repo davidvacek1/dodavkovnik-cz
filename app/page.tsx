@@ -1,6 +1,5 @@
 import Hero from "@/components/home/Hero";
 import TrustBar from "@/components/home/TrustBar";
-import Stats from "@/components/home/Stats";
 import UseCases from "@/components/home/UseCases";
 import HowItWorks from "@/components/home/HowItWorks";
 import WhyUs from "@/components/home/WhyUs";
@@ -25,7 +24,6 @@ export default function Home() {
     <>
       <Hero />
       <TrustBar />
-      <Stats />
       <UseCases />
       <HowItWorks />
       <FeaturedVehicles />
