@@ -1,26 +1,26 @@
-import { IconBox, IconBuilding, IconHammer, IconSofa } from "../ui/Icons";
 import { FadeIn, Stagger, StaggerItem } from "../ui/Motion";
+import { UseCaseBoxes, UseCaseSofa, UseCaseDolly, UseCaseWheelbarrow } from "../ui/UseCaseIllustrations";
 
 const cases = [
   {
-    icon: IconSofa,
-    title: "Stěhování v Praze",
-    text: "Malé i větší stěhování — od garsonky po rodinný dům. Poradíme, jakou dodávku vybrat.",
+    Illu: UseCaseBoxes,
+    title: "Stěhování / Praha",
+    text: "Přestěhujte byt, dům nebo kancelář bez starostí.",
   },
   {
-    icon: IconBox,
-    title: "Odvoz nábytku a zboží",
-    text: "Převezete si nábytek z bazaru, pračku, sedačku nebo náklad z e-shopu sami — bez stěhováků.",
+    Illu: UseCaseSofa,
+    title: "Odvoz nábytku",
+    text: "Převezete nábytek rychle a bezpečně.",
   },
   {
-    icon: IconBuilding,
+    Illu: UseCaseDolly,
     title: "Firemní rozvoz",
-    text: "Pravidelná distribuce zboží po Praze, rozvoz pro e-shopy, dočasná záloha za firemní flotilu.",
+    text: "Pravidelně rozvážíte zboží a materiály po Praze.",
   },
   {
-    icon: IconHammer,
+    Illu: UseCaseWheelbarrow,
     title: "Materiál na stavbu",
-    text: "Valníky, sklápěče a plachtou chráněné dodávky pro stavebniny, sádrokartony i suť.",
+    text: "Doprava všeho, co na stavbě potřebujete.",
   },
 ];
 
@@ -29,27 +29,28 @@ export default function UseCases() {
     <section className="section bg-[var(--surface-alt)]">
       <div className="container-site">
         <FadeIn className="text-center max-w-2xl mx-auto">
-          <span className="eyebrow">Pro koho jsme tady</span>
           <h2 className="text-[clamp(1.8rem,3.5vw,2.5rem)] font-bold">
-            Potřebujete dodávku hned. My ji máme.
+            Když potřebujete dodávku, jsme tu správně
           </h2>
-          <p className="mt-4 text-[var(--ink-muted)] text-lg">
-            Stěhujete se, došel vám firemní vůz do servisu, nebo potřebujete odvézt materiál
-            na stavbu? Řekněte, co převážíte, a my za vás vybereme vhodný vůz — a rovnou
-            řekneme, kolik to stojí.
-          </p>
         </FadeIn>
 
-        <Stagger className="mt-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          {cases.map((c) => (
-            <StaggerItem key={c.title} className="card p-7 text-left">
-              <div className="w-12 h-12 rounded-lg bg-[var(--brand-orange-soft)] text-[var(--brand-orange)] flex items-center justify-center mb-5">
-                <c.icon className="w-6 h-6" />
+        <Stagger className="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          {cases.map(({ Illu, title, text }) => (
+            <StaggerItem
+              key={title}
+              className="bg-white rounded-2xl border border-[var(--border)] overflow-hidden flex flex-col"
+            >
+              <div className="aspect-[4/3] bg-[#FAF6EE] flex items-center justify-center p-8">
+                <Illu className="w-full h-full text-[var(--brand-navy)]" />
               </div>
-              <h3 className="font-[family-name:var(--font-display)] font-bold text-[var(--brand-navy)] text-lg mb-2">
-                {c.title}
-              </h3>
-              <p className="text-[15px] text-[var(--ink-muted)] leading-relaxed">{c.text}</p>
+              <div className="p-5 md:p-6 text-center">
+                <h3 className="font-[family-name:var(--font-display)] font-bold text-[var(--brand-navy)] text-[17px]">
+                  {title}
+                </h3>
+                <p className="mt-1.5 text-[14px] text-[var(--ink-muted)] leading-relaxed">
+                  {text}
+                </p>
+              </div>
             </StaggerItem>
           ))}
         </Stagger>
