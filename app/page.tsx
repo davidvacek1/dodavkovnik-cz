@@ -5,9 +5,7 @@ import UseCases from "@/components/home/UseCases";
 import HowItWorks from "@/components/home/HowItWorks";
 import WhyUs from "@/components/home/WhyUs";
 import FeaturedVehicles from "@/components/home/FeaturedVehicles";
-import VehicleShowcase from "@/components/home/VehicleShowcase";
 import Included from "@/components/home/Included";
-import PriceTable from "@/components/home/PriceTable";
 import Faq from "@/components/home/Faq";
 import CtaBanner from "@/components/home/CtaBanner";
 import { faq } from "@/lib/data/faq";
@@ -32,9 +30,7 @@ export default function Home() {
       <HowItWorks />
       <FeaturedVehicles />
       <WhyUs />
-      <VehicleShowcase />
       <Included />
-      <PriceTable />
       <Faq />
       <CtaBanner />
       <script

@@ -3,9 +3,9 @@ import PriceTable from "@/components/home/PriceTable";
 import { kmLimits } from "@/lib/data/company";
 
 export const metadata: Metadata = {
-  title: "Ceník pronájmu — dodávky, minibusy, nákladní vozy",
+  title: "Půjčovna dodávek Praha ceník | Dodavkovnik.cz",
   description:
-    "Kompletní ceník pronájmu dodávek v Praze. Všechna cenová pásma od 3 hodin po 1 měsíc, včetně kauce a limitů volných kilometrů.",
+    "Kompletní ceník půjčovny dodávek Praha. Všechna cenová pásma od 3 hodin po 1 měsíc, kauce a limity volných kilometrů. Pojištění, asistence a dálniční známka v ceně.",
   alternates: { canonical: "/cenik" },
 };
 

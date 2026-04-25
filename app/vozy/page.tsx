@@ -5,9 +5,9 @@ import { categoryMeta, vehicles, type Category } from "@/lib/data/vehicles";
 import { IconArrowRight, IconBox, IconRoute } from "@/components/ui/Icons";
 
 export const metadata: Metadata = {
-  title: "Vozový park — 21 dodávek, minibusů a nákladních vozů",
+  title: "Pronájem dodávek Praha — vozový park 21 vozidel | Dodavkovnik.cz",
   description:
-    "Kompletní vozový park dodavkovnik.cz — 12 dodávek, 2 minibusy, 2 nákladní vozy, 3 osobní auta a 2 přívěsy. Všechny vozy včetně parametrů a cen.",
+    "Vyberte si dodávku z 21 vozidel: malé i velké dodávky, minibusy, valníky, sklápěče, chladicí vozy a hydraulické čelo. Pronájem od 3 hodin po měsíc, vše z jedné pobočky v Praze 9.",
   alternates: { canonical: "/vozy" },
 };
 
