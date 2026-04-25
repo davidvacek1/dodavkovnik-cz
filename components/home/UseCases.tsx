@@ -34,7 +34,7 @@ export default function UseCases() {
       <div className="container-site">
         <FadeIn className="text-center max-w-2xl mx-auto">
           <h2 className="text-[clamp(1.8rem,3.5vw,2.5rem)] font-bold">
-            Když potřebujete dodávku, jsme tu správně
+            Když potřebujete dodávku, jste tu správně
           </h2>
         </FadeIn>
 
