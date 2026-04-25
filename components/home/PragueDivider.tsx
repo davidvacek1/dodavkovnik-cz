@@ -18,14 +18,14 @@ export default function PragueDivider({
 }: PragueDividerProps) {
   return (
     <div
-      className={`relative w-full overflow-hidden pointer-events-none ${className}`}
+      className={`w-full overflow-hidden pointer-events-none ${className}`}
       style={{ height }}
       aria-hidden
     >
       <svg
         viewBox="0 30 1920 170"
         preserveAspectRatio="none"
-        className="absolute inset-0 w-full h-full block"
+        className="w-full h-full block"
       >
         {/* Soft orange horizon glow above the silhouette */}
         <defs>
