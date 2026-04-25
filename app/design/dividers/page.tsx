@@ -89,9 +89,11 @@ export default function DividerVariantsPage() {
                 <h2 className="font-bold text-[var(--brand-navy)] text-xl">{name}</h2>
                 <p className="text-[14px] text-[var(--ink-muted)] mt-1">{desc}</p>
               </div>
-              {/* Render: hero strip + divider + content strip */}
-              <div className="bg-[var(--brand-navy)] h-32 relative" />
-              <Component fill="#ffffff" height={140} />
+              {/* Render: navy hero strip + divider on navy backdrop + white content strip */}
+              <div className="bg-[var(--brand-navy)] h-40 relative" />
+              <div className="relative bg-[var(--brand-navy)]">
+                <Component fill="#ffffff" height={140} />
+              </div>
               <div className="bg-white h-32 relative flex items-center justify-center">
                 <span className="text-[var(--ink-muted)] text-sm uppercase tracking-wider">
                   Bílý obsah pokračuje níže…
