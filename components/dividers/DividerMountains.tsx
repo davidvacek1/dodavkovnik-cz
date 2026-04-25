@@ -31,12 +31,6 @@ export default function DividerMountains({
           fill={fill}
           d="M 0 200 L 0 160 L 180 130 L 380 150 L 580 110 L 820 145 L 1080 95 L 1320 140 L 1560 120 L 1780 145 L 1920 130 L 1920 200 Z"
         />
-        {/* Tiny orange accent peak */}
-        <path
-          fill="#eb6a2c"
-          opacity="0.85"
-          d="M 1075 95 L 1095 135 L 1055 135 Z"
-        />
       </svg>
     </div>
   );

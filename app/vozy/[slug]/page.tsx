@@ -74,6 +74,7 @@ export default async function VehiclePage({ params }: PageProps) {
                 alt={v.name}
                 fill
                 priority
+                quality={90}
                 sizes="(min-width: 1024px) 50vw, 100vw"
                 className="object-cover"
               />
@@ -168,7 +169,7 @@ export default async function VehiclePage({ params }: PageProps) {
                   className="card overflow-hidden group"
                 >
                   <div className="relative aspect-[4/3] bg-[var(--surface-alt)]">
-                    <Image src={r.image} alt={r.name} fill sizes="33vw" className="object-cover group-hover:scale-[1.04] transition-transform duration-500" />
+                    <Image src={r.image} alt={r.name} fill quality={90} sizes="33vw" className="object-cover group-hover:scale-[1.04] transition-transform duration-500" />
                   </div>
                   <div className="p-5">
                     <h3 className="font-[family-name:var(--font-display)] font-bold text-[var(--brand-navy)]">

@@ -28,6 +28,7 @@ export default function FeaturedVehicles() {
                   src={v.image}
                   alt={v.name}
                   fill
+                  quality={90}
                   sizes="(min-width: 768px) 33vw, 100vw"
                   className="object-cover object-center group-hover:scale-[1.04] transition-transform duration-500"
                 />

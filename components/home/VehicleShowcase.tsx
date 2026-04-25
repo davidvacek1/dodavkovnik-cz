@@ -72,6 +72,7 @@ export default function VehicleShowcase() {
                           src={v.image}
                           alt={v.name}
                           fill
+                          quality={90}
                           sizes="(min-width: 1024px) 22vw, (min-width: 768px) 33vw, 50vw"
                           className="object-cover group-hover:scale-[1.06] transition-transform duration-500"
                         />

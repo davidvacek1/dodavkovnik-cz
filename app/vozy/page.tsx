@@ -46,6 +46,7 @@ export default function VozyPage() {
                         src={v.image}
                         alt={v.name}
                         fill
+                        quality={90}
                         sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
                         className="object-cover object-center group-hover:scale-[1.04] transition-transform duration-500"
                       />

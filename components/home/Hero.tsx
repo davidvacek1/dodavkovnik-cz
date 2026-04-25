@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
-import PragueDivider from "./PragueDivider";
+import DividerMountains from "../dividers/DividerMountains";
 import { company } from "@/lib/data/company";
 import { categoryMeta, vehicles, type Category } from "@/lib/data/vehicles";
 import {
@@ -223,7 +223,7 @@ export default function Hero() {
           </form>
         </div>
       </div>
-      <PragueDivider fill="var(--surface)" height={140} className="absolute inset-x-0 bottom-0" />
+      <DividerMountains fill="var(--surface)" height={140} className="absolute inset-x-0 bottom-0" />
     </section>
   );
 }
