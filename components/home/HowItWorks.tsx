@@ -1,21 +1,20 @@
-import { IconArrowRight } from "../ui/Icons";
 import { FadeIn, Stagger, StaggerItem } from "../ui/Motion";
 
 const steps = [
   {
-    n: "01",
-    title: "Vyberte termín a vůz",
-    text: "Vyplňte datum vyzvednutí, dobu pronájmu a typ vozu. Pokud nevíte, jaký zvolit, rádi poradíme.",
+    n: 1,
+    title: "Vyberte si termín a typ vozu",
+    text: "Zvolte datum, dobu a vozidlo, které vám vyhovuje.",
   },
   {
-    n: "02",
+    n: 2,
     title: "Rezervujte online",
-    text: "Potvrzení rezervace dostanete obvykle do hodiny e-mailem nebo telefonem. Platbu řešíte až u nás.",
+    text: "Jednoduchá rezervace během pár minut.",
   },
   {
-    n: "03",
-    title: "Převezměte a jeďte",
-    text: "Vyzvednete si vůz na naší adrese v Praze 9, složíte kauci a vyrazíte. Vracíte, kdy se s vámi domluvíme.",
+    n: 3,
+    title: "Převezměte, jezděte, vraťte",
+    text: "Rychlé předání vozu a jednoduché vrácení.",
   },
 ];
 
@@ -28,33 +27,39 @@ export default function HowItWorks() {
           <h2 className="text-[clamp(1.8rem,3.5vw,2.5rem)] font-bold">
             Tři kroky k vaší dodávce.
           </h2>
-          <p className="mt-4 text-[var(--ink-muted)] text-lg">
-            Žádné zbytečné papírování. Celý proces máte hotový během pár minut.
-          </p>
         </FadeIn>
 
-        <Stagger className="mt-14 grid lg:grid-cols-3 gap-5 relative">
-          {steps.map((s, i) => (
-            <StaggerItem key={s.n} className="relative">
-              <div className="card p-8 h-full">
-                <div className="flex items-center gap-4 mb-5">
-                  <span className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-[var(--brand-navy)] text-[var(--brand-orange)] font-bold text-lg font-[family-name:var(--font-display)]">
+        {/* Steps row with connecting dashed line */}
+        <div className="mt-14 max-w-5xl mx-auto relative">
+          {/* Dashed connector behind the bubbles — covers center 2/3 */}
+          <div
+            aria-hidden
+            className="hidden md:block absolute top-9 left-[16.66%] right-[16.66%] h-0 border-t-2 border-dashed border-[var(--brand-orange)]/40"
+          />
+          <Stagger className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-6 relative">
+            {steps.map((s) => (
+              <StaggerItem key={s.n} className="text-center">
+                <div className="flex justify-center mb-5">
+                  <span className="relative inline-flex items-center justify-center w-[72px] h-[72px] rounded-full bg-[var(--brand-navy)] text-white font-[family-name:var(--font-display)] font-bold text-2xl shadow-[0_10px_30px_-10px_rgba(15,41,68,0.5)] ring-4 ring-white">
                     {s.n}
                   </span>
-                  {i < steps.length - 1 && (
-                    <span className="hidden lg:block absolute right-[-22px] top-1/2 -translate-y-1/2 z-10">
-                      <IconArrowRight className="w-7 h-7 text-[var(--brand-orange)]/40" />
-                    </span>
-                  )}
                 </div>
-                <h3 className="font-[family-name:var(--font-display)] font-bold text-[var(--brand-navy)] text-xl mb-3">
+                <h3 className="font-[family-name:var(--font-display)] font-bold text-[var(--brand-navy)] text-lg md:text-xl mb-2 max-w-[18rem] mx-auto leading-snug">
                   {s.title}
                 </h3>
-                <p className="text-[15px] text-[var(--ink-muted)] leading-relaxed">{s.text}</p>
-              </div>
-            </StaggerItem>
-          ))}
-        </Stagger>
+                <p className="text-[15px] text-[var(--ink-muted)] leading-relaxed max-w-[18rem] mx-auto">
+                  {s.text}
+                </p>
+              </StaggerItem>
+            ))}
+          </Stagger>
+        </div>
+
+        <FadeIn className="mt-12 text-center">
+          <p className="inline-block text-[15px] italic text-[var(--brand-navy)] font-semibold border-t-2 border-dashed border-[var(--brand-orange)]/30 pt-4">
+            Jednoduché, rychlé a bez zbytečných papírů!
+          </p>
+        </FadeIn>
       </div>
     </section>
   );
