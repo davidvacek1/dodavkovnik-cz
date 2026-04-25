@@ -106,9 +106,16 @@ export default function Footer() {
       <div className="container-site mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row md:items-center md:justify-between gap-4 text-xs text-white/50">
         <p>© {year} {company.name}. Všechna práva vyhrazena.</p>
         <p>
-          Web vyrobila <span className="text-white/75">OpenClaw</span> pro
-          {" "}
-          <span className="text-white/75">dodavkovnik.cz</span>.
+          Web vytvořila{" "}
+          <a
+            href="https://seopohotovost.cz"
+            target="_blank"
+            rel="noopener"
+            className="text-white/75 hover:text-[var(--brand-orange)]"
+          >
+            SEOPohotovost
+          </a>
+          .
         </p>
       </div>
     </footer>
